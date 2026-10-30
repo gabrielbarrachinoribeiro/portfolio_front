@@ -1,5 +1,4 @@
 import aboutImage from '../../assets/sobre.jpeg'
-import AboutWords from './AboutWords.jsx'
 
 // Valores da referência visual; ajuste conforme sua experiência.
 const highlights = [
@@ -10,7 +9,7 @@ const highlights = [
 
 export default function About() {
     return (
-        <section id="sobre-mim" className="bg-[#101426] py-[clamp(56px,7vw,104px)] font-[Montserrat,sans-serif]" aria-labelledby="about-title">
+        <section id="sobre-mim" className="section-spacing bg-[#101426] font-[Montserrat,sans-serif]" aria-labelledby="about-title">
             <div className="container mx-auto grid grid-cols-1 items-center gap-[clamp(32px,5.7vw,80px)] px-6 lg:grid-cols-[minmax(0,0.7fr)_minmax(0,1fr)]">
                 <img
                     className="block aspect-339/416 w-full rounded-[14px] object-cover object-center max-lg:mx-auto max-lg:max-h-120 max-lg:max-w-120"
@@ -49,7 +48,6 @@ export default function About() {
                     </dl>
                 </div>
             </div>
-            <AboutWords />
         </section>
     )
 }

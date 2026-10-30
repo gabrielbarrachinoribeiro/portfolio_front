@@ -11,7 +11,7 @@ export default function Contact() {
 
     return (
         <>
-            <section id="contato" aria-labelledby="contact-title" className="overflow-hidden bg-[#101426] pt-20 pb-16 md:pt-28 md:pb-24">
+            <section id="contato" aria-labelledby="contact-title" className="section-spacing overflow-hidden bg-[#101426]">
                 <div className="container relative isolate mx-auto px-6">
                     <img
                         src={contactImage}

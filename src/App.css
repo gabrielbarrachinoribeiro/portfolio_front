@@ -6,6 +6,28 @@ body{
   color: #F0E9FA;
 }
 
+:root {
+  --section-padding: 80px;
+}
+
+@media (min-width: 768px) {
+  :root {
+    --section-padding: 120px;
+  }
+}
+
+.section-spacing {
+  padding-block: var(--section-padding);
+}
+
+#sobre-mim.section-spacing {
+  padding-top: 0;
+}
+
+.projects-footer {
+  padding-bottom: var(--section-padding);
+}
+
 .app {
   display: flex;
   flex-direction: column;
@@ -15,6 +37,12 @@ body{
 
 .app > header {
   flex-shrink: 0;
+}
+
+@media (max-width: 600px) {
+  .app {
+    min-height: 70svh;
+  }
 }
 
 .fontAclonica{
