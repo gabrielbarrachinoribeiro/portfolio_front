@@ -24,10 +24,6 @@ body{
   padding-top: 0;
 }
 
-.projects-footer {
-  padding-bottom: var(--section-padding);
-}
-
 .app {
   display: flex;
   flex-direction: column;
