@@ -1,0 +1,5 @@
+{
+  "rewrites": [
+    { "source": "/projetos/:slug", "destination": "/index.html" }
+  ]
+}

@@ -1,1 +1,10 @@
 ﻿@import "tailwindcss";
+
+@theme {
+  --animate-skills-marquee: skills-marquee 20s linear infinite;
+
+  @keyframes skills-marquee {
+    from { transform: translate3d(0, 0, 0); }
+    to { transform: translate3d(-50%, 0, 0); }
+  }
+}

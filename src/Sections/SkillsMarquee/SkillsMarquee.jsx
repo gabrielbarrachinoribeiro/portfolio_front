@@ -1,6 +1,5 @@
 import { useLayoutEffect, useRef, useState } from 'react'
 import { HiSparkles } from 'react-icons/hi2'
-import './SkillsMarquee.css'
 
 const skills = [
     'React',
@@ -42,7 +41,7 @@ function SkillsMarquee() {
             aria-label="Tecnologias e especialidades"
             className="overflow-hidden border-y border-[#F0E9FA]/20 bg-[#14192C] py-4 text-[#F0E9FA]"
         >
-            <div className="skills-marquee-track flex w-max" style={{ animationDuration: `${repeatCount * 20}s` }}>
+            <div className="flex w-max animate-skills-marquee will-change-transform" style={{ animationDuration: `${repeatCount * 20}s` }}>
                 {[0, 1].map((copy) => (
                     <div key={copy} className="flex shrink-0">
                         {Array.from({ length: repeatCount }, (_, repeat) => (
