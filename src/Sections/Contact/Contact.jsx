@@ -1,9 +1,9 @@
 import { ArrowUpRight } from 'lucide-react'
 import { FaInstagram } from 'react-icons/fa'
 import contactImage from '../../assets/contato.png'
+import { contact } from '../../data/contact'
 
-// Preencha com o link de contato e o perfil do Instagram.
-const contactLinks = { contact: '/', instagram: '/' }
+const contactLinks = { contact: '/contato', instagram: contact.instagram }
 
 export default function Contact() {
     const buttonClasses = 'inline-flex items-center justify-center gap-2 rounded-md bg-[#A999ED] px-4 py-3 text-sm font-bold text-[#101426] transition-colors hover:bg-[#BBAEF3] focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-[#A999ED] disabled:cursor-default'

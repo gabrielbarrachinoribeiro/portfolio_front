@@ -6,7 +6,7 @@ const links = [
     ['Sobre mim', '#sobre-mim'],
     ['Projetos', '#projetos'],
     ['Experiências', '#experiencias'],
-    ['Entrar em contato', '#contato'],
+    ['Entrar em contato', '/contato'],
 ]
 
 function Header(){
@@ -58,7 +58,8 @@ function Header(){
     }, [isOpen])
 
     return(
-        <header className="container mx-auto px-6 flex items-center justify-between py-6">
+        <header className="fixed inset-x-0 top-0 z-50 bg-[#101426] text-[#F0E9FA]">
+          <div className="container mx-auto flex h-22 items-center justify-between px-6">
             <a href="/" className="min-w-0 text-[clamp(14px,4vw,20px)] font-bold">gabrielbarrachino<span className="text-[#A999ED]">{'/>'}</span></a>
             <div ref={menuRef} className="relative" onBlur={(event) => {
                 if (!event.currentTarget.contains(event.relatedTarget)) setIsOpen(false)
@@ -85,7 +86,7 @@ function Header(){
                         {links.map(([label, href]) => (
                             <li key={href}>
                                 <a
-                                    href={href}
+                                    href={href.startsWith('#') && window.location.pathname !== '/' ? `/${href}` : href}
                                     onClick={() => setIsOpen(false)}
                                     className="block rounded-lg px-4 py-3 text-sm transition-colors hover:bg-[#A999ED]/15 hover:text-[#A999ED] focus-visible:outline-2 focus-visible:outline-[#A999ED] max-[600px]:rounded-none max-[600px]:border-b max-[600px]:border-[#101426]/15 max-[600px]:px-0 max-[600px]:py-5 max-[600px]:text-[clamp(24px,7vw,42px)] max-[600px]:leading-tight max-[600px]:font-semibold max-[600px]:tracking-tight max-[600px]:hover:text-[#51427E] max-[600px]:focus-visible:outline-[#101426]"
                                 >
@@ -96,6 +97,7 @@ function Header(){
                     </ul>
                 </nav>
             </div>
+          </div>
         </header>
     )
 }

@@ -1,12 +1,11 @@
 import { FaWhatsapp } from 'react-icons/fa'
 
-const message = 'Olá, Gabriel! Vi seu portfólio e gostaria de conversar sobre um projeto.'
-const whatsappUrl = `https://wa.me/5511951393362?text=${encodeURIComponent(message)}`
+import { contact } from '../data/contact'
 
 export default function WhatsAppButton() {
   return (
     <a
-      href={whatsappUrl}
+      href={contact.whatsapp}
       target="_blank"
       rel="noopener noreferrer"
       aria-label="Conversar com Gabriel pelo WhatsApp"

@@ -1,6 +1,7 @@
 ﻿@import "tailwindcss";
 
 @theme {
+  --text-xs: max(12px, 0.75rem);
   --animate-skills-marquee: skills-marquee 20s linear infinite;
 
   @keyframes skills-marquee {

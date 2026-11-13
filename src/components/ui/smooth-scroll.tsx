@@ -7,7 +7,7 @@ import 'lenis/dist/lenis.css';
 const SmoothScroll = forwardRef<HTMLDivElement, { children: ReactNode }>(
   function SmoothScroll({ children }, ref) {
     return (
-      <ReactLenis root options={{ anchors: true, autoRaf: true }}>
+      <ReactLenis root options={{ anchors: { offset: -104 }, autoRaf: true }}>
         <div ref={ref}>{children}</div>
       </ReactLenis>
     );

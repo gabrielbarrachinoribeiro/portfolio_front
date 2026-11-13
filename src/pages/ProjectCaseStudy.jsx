@@ -184,7 +184,7 @@ export default function ProjectCaseStudy({ project }) {
                   <p className="text-pretty mt-4 max-w-md text-sm leading-relaxed text-[var(--case-muted)]">
                     {project.typography.description}
                   </p>
-                  <a href={project.liveUrl} target="_blank" rel="noopener noreferrer" className={`mt-5 inline-flex w-fit items-center gap-2 text-xs text-[var(--case-accent)] hover:underline ${focus}`}>
+                  <a href="/contato" className={`mt-5 inline-flex w-fit items-center gap-2 text-xs text-[var(--case-accent)] hover:underline ${focus}`}>
                     Seu próximo passo começa aqui
                     <ArrowUpRight size={14} />
                   </a>
