@@ -41,8 +41,10 @@ export const projects = [
     id: "05",
     title: "Projeto 05",
     category: "Acadêmico",
-    description: "Aplicação web",
+    description: "Leitura de quadrinhos, mangás e webtoons",
     image: folhetoImage,
-    href: "/projetos/projeto-05",
+    href: "/projetos/folheto",
+    name: "Folheto",
+    liveUrl: "https://folheto.vercel.app/",
   },
 ];

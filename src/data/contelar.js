@@ -3,6 +3,13 @@ import contelarInterface from "../assets/contelarProjeto2.png";
 
 // Conteúdo inicial do case: ajuste os textos e as escolhas técnicas conforme o projeto.
 export const contelar = {
+  id: "02",
+  theme: {
+    "--case-accent": "#B6F568", "--case-background": "#090B0F",
+    "--case-white": "#F5F7FA", "--case-surface": "#12171D", "--case-muted": "#9FA3AA",
+  },
+  coverAlt: "Visão geral do Contelar com saldo, receitas, despesas e gráficos financeiros",
+  identity: { title: "Uma identidade que dá", highlight: "clareza.", description: "Contraste para organizar. Verde para destacar o que faz o dinheiro se mover." },
   title: "Contelar",
   description:
     "Uma visão clara do seu dinheiro. Mais espaço para os seus planos.",
@@ -29,6 +36,7 @@ export const contelar = {
   ],
   typography: {
     name: "Inter",
+    description: "Acompanhe o presente. Planeje o futuro. Uma interface que deixa os números falarem com simplicidade.",
     family: "Inter, ui-sans-serif, system-ui, sans-serif",
     weights: "Regular / Medium / Semibold",
     sample: "Clareza em cada escolha.",

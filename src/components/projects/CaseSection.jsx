@@ -25,8 +25,8 @@ export function Reveal({ children, className = '' }) {
 export function SectionHeading({ title, highlight, children }) {
   return (
     <div className="mb-8 flex flex-col justify-between gap-4 md:mb-10 md:flex-row md:items-end">
-      <h2 className="text-balance text-2xl font-medium tracking-tight sm:text-3xl">{title}{highlight && <>{' '}<span className="text-[#B6F568]">{highlight}</span></>}</h2>
-      {children && <p className="text-balance max-w-md text-sm leading-relaxed text-[#F5F7FA]/55">{children}</p>}
+      <h2 className="text-balance text-2xl font-medium tracking-tight sm:text-3xl">{title}{highlight && <>{' '}<span className="text-[var(--case-accent,#B6F568)]">{highlight}</span></>}</h2>
+      {children && <p className="text-balance max-w-md text-sm leading-relaxed text-[var(--case-muted,#9FA3AA)]">{children}</p>}
     </div>
   )
 }
