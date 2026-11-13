@@ -1,5 +1,6 @@
 {
   "rewrites": [
+    { "source": "/contato", "destination": "/index.html" },
     { "source": "/projetos/:slug", "destination": "/index.html" }
   ]
 }
