@@ -1,4 +1,5 @@
 import projectImage from "../assets/projeto1.jpg";
+import nivoobankImage from "../assets/nivoobank.png";
 import contelarImage from "../assets/contelar.png";
 import folhetoImage from "../assets/folheto.png";
 
@@ -7,9 +8,11 @@ export const projects = [
     id: "01",
     title: "Projeto 01",
     category: "UX/UI",
-    description: "Plataforma SaaS",
-    image: projectImage,
-    href: "/projetos/projeto-01",
+    description: "Banco digital fictício",
+    image: nivoobankImage,
+    href: "/projetos/nivoobank",
+    name: "Nivoobank",
+    liveUrl: "https://nivoobank.vercel.app/",
   },
   {
     id: "02",

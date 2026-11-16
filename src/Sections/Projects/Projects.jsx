@@ -40,6 +40,8 @@ export default function Projects() {
             <a
               key={project.id}
               href={project.href}
+              target="_blank"
+              rel="noopener noreferrer"
               className={`sm:max-lg:nth-[3n+1]:min-h-90 lg:h-full lg:min-h-0 ${mosaicPlacement[project.id]} min-w-0 min-h-65 group relative isolate block overflow-hidden rounded-[14px] bg-[#14192C] text-[#F0E9FA] no-underline focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-[#A999ED]`}
               aria-labelledby={`project-${project.id}`}
             >

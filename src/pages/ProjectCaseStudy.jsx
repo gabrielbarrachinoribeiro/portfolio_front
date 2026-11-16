@@ -27,12 +27,19 @@ export default function ProjectCaseStudy({ project }) {
     <main
       id="topo"
       tabIndex={-1}
-      style={project.theme}
+      style={{
+        "--case-background": "#101426",
+        "--case-surface": "#14192C",
+        "--case-accent": "#A999ED",
+        "--case-white": "#F0E9FA",
+        "--case-muted": "#F0E9FAA6",
+        "--project-accent": project.theme["--case-accent"],
+      }}
       className="min-h-dvh overflow-x-clip bg-[var(--case-background)] font-sans text-[var(--case-white)] selection:bg-[var(--case-accent)] selection:text-[var(--case-background)]"
     >
       <link
         rel="stylesheet"
-        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap"
+        href={project.typography.stylesheetUrl || "https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap"}
       />
       <div style={{ fontFamily: project.typography.family }}>
         <nav
@@ -76,6 +83,7 @@ export default function ProjectCaseStudy({ project }) {
             <div className="flex flex-wrap items-center gap-6 text-xs">
               <a
                 href={project.liveUrl}
+                style={{ color: "var(--project-accent)" }}
                 target="_blank"
                 rel="noopener noreferrer"
                 className={`inline-flex items-center gap-2 text-[var(--case-accent)] hover:underline ${focus}`}
@@ -268,6 +276,8 @@ export default function ProjectCaseStudy({ project }) {
           <Reveal>
             <a
               href={nextProject.href}
+              target="_blank"
+              rel="noopener noreferrer"
               className={`group grid items-center gap-8 border-t border-white/15 pt-9 sm:grid-cols-2 ${focus}`}
             >
               <div>
