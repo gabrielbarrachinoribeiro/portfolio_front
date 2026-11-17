@@ -2,6 +2,7 @@ import projectImage from "../assets/projeto1.jpg";
 import nivoobankImage from "../assets/nivoobank.png";
 import contelarImage from "../assets/contelar.png";
 import folhetoImage from "../assets/folheto.png";
+import imovelleveImage from "../assets/imovelleve.png";
 
 export const projects = [
   {
@@ -36,9 +37,11 @@ export const projects = [
     id: "04",
     title: "Projeto 04",
     category: "UX/UI",
-    description: "Produto digital",
-    image: projectImage,
-    href: "/projetos/projeto-04",
+    description: "Plataforma de imóveis",
+    image: imovelleveImage,
+    href: "/projetos/imovelleve",
+    name: "Imóvel Leve",
+    liveUrl: "https://imovelleve.vercel.app/",
   },
   {
     id: "05",

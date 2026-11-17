@@ -12,6 +12,7 @@ import ContelarCaseStudy from './pages/ContelarCaseStudy.jsx'
 import ProjectCaseStudy from './pages/ProjectCaseStudy.jsx'
 import { folheto } from './data/folheto'
 import { nivoobank } from './data/nivoobank'
+import { imovelleve } from './data/imovelleve'
 import { projects } from './data/projects'
 import ContactPage from './pages/ContactPage.jsx'
 
@@ -21,6 +22,7 @@ function App() {
   if (pathname.startsWith('/projetos/')) {
     const project = projects.find((item) => item.href === pathname)
     if (project?.id === '01') return <ProjectCaseStudy project={nivoobank} />
+    if (project?.id === '04') return <ProjectCaseStudy project={imovelleve} />
     if (project?.id === '05') return <ProjectCaseStudy project={folheto} />
     if (project?.id === '02') return <ContelarCaseStudy />
     return <ProjectDetails project={project} />
