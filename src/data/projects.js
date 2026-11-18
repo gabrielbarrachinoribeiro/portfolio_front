@@ -1,8 +1,9 @@
-import projectImage from "../assets/projeto1.jpg";
+import auraImage from "../assets/aura.png";
 import nivoobankImage from "../assets/nivoobank.png";
 import contelarImage from "../assets/contelar.png";
 import folhetoImage from "../assets/folheto.png";
 import imovelleveImage from "../assets/imovelleve.png";
+import projectImage from "../assets/projeto1.jpg";
 
 export const projects = [
   {
@@ -29,9 +30,12 @@ export const projects = [
     id: "03",
     title: "Projeto 03",
     category: "Marketing",
-    description: "Site institucional",
-    image: projectImage,
+    description: "Landing page de perfume",
+    image: auraImage,
     href: "/projetos/projeto-03",
+    name: "Aura.skin",
+    liveUrl: "https://auraskin-self.vercel.app/",
+    githubUrl: "https://github.com/gabrielbarrachinoribeiro/auraskin",
   },
   {
     id: "04",
@@ -52,5 +56,12 @@ export const projects = [
     href: "/projetos/folheto",
     name: "Folheto",
     liveUrl: "https://folheto.vercel.app/",
+  },
+  {
+    id: "06",
+    title: "Projeto 06",
+    description: "Landing page de academia",
+    image: projectImage,
+    href: "/projetos/projeto-06",
   },
 ];

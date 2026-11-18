@@ -164,7 +164,7 @@ export default function ProjectCaseStudy({ project }) {
               </SectionHeading>
               <ColorPalette colors={project.palette} />
               <div className="mt-9 grid gap-8 border-b border-white/10 pb-9 md:grid-cols-2 md:gap-16">
-                <div>
+                <div style={{ fontFamily: project.typography.specimenFamily }}>
                   <p className="text-pretty text-xs uppercase tracking-widest text-[var(--case-muted)]">
                     Tipografia / {project.typography.name}
                   </p>
@@ -186,7 +186,7 @@ export default function ProjectCaseStudy({ project }) {
                   </p>
                 </div>
                 <div className="flex flex-col justify-center">
-                  <p className="text-pretty text-3xl font-semibold leading-tight tracking-tight sm:text-4xl">
+                  <p style={{ fontFamily: project.typography.sampleFamily }} className="text-pretty text-3xl font-semibold leading-tight tracking-tight sm:text-4xl">
                     {project.typography.sample}
                   </p>
                   <p className="text-pretty mt-4 max-w-md text-sm leading-relaxed text-[var(--case-muted)]">
@@ -291,7 +291,7 @@ export default function ProjectCaseStudy({ project }) {
                   <ArrowUpRight className="size-8 text-[var(--case-accent)] transition-transform group-hover:-translate-y-1 group-hover:translate-x-1" />
                 </div>
                 <p className="text-pretty mt-4 text-sm text-[var(--case-muted)]">
-                  {nextProject.description} · {nextProject.category}
+                  {[nextProject.description, nextProject.category].filter(Boolean).join(" · ")}
                 </p>
               </div>
               <img

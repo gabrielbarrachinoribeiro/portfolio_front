@@ -1,5 +1,4 @@
-﻿import { ArrowRight, ArrowUpRight } from "lucide-react";
-import projectImage from "../../assets/projeto1.jpg";
+﻿import { ArrowUpRight } from "lucide-react";
 import { projects } from "../../data/projects";
 
 
@@ -10,6 +9,7 @@ const mosaicPlacement = {
   "03": "lg:[grid-area:1/10/5/13]",
   "04": "lg:[grid-area:3/5/5/10]",
   "05": "lg:[grid-area:5/1/7/5]",
+  "06": "lg:[grid-area:5/5/7/13]",
 };
 
 export default function Projects() {
@@ -64,9 +64,11 @@ export default function Projects() {
                   >
                     {project.title}
                   </h3>
-                  <p className="m-0 text-sm text-[#F0E9FA]/80">
-                    {project.description} · {project.category}
-                  </p>
+                  {project.description && (
+                    <p className="m-0 text-sm text-[#F0E9FA]/80">
+                      {[project.description, project.category].filter(Boolean).join(" · ")}
+                    </p>
+                  )}
                 </div>
                 <span
                   className="inline-flex size-9 shrink-0 items-center justify-center rounded-full border border-[#F0E9FA]/70 transition-colors group-hover:border-[#A999ED] group-hover:bg-[#A999ED] group-hover:text-[#101426]"
@@ -77,28 +79,6 @@ export default function Projects() {
               </div>
             </a>
           ))}
-          <a
-            href="/projetos"
-            className={`min-h-40 sm:col-span-full lg:[grid-area:5/5/7/13] lg:min-h-0 group relative isolate flex items-center justify-center gap-4 overflow-hidden rounded-[14px] border border-[#A999ED]/25 bg-[#14192C] p-6 text-center text-base font-semibold text-[#F0E9FA] no-underline transition-colors hover:border-[#A999ED] focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-[#A999ED] sm:text-xl`}
-          >
-            <img
-              src={projectImage}
-              alt=""
-              loading="lazy"
-              className="absolute inset-0 h-full w-full object-cover object-center transition-transform duration-500 motion-safe:group-hover:scale-105 motion-reduce:transition-none"
-            />
-            <div
-              className="pointer-events-none absolute inset-0 bg-[#050710]/75"
-              aria-hidden="true"
-            />
-            <span className="relative">Ver todos os projetos</span>
-            <span
-              className="relative inline-flex size-9 shrink-0 items-center justify-center rounded-full border border-[#A999ED]/70 text-[#A999ED]"
-              aria-hidden="true"
-            >
-              <ArrowRight size={18} />
-            </span>
-          </a>
         </div>
       </div>
     </section>
