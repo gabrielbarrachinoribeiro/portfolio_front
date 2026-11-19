@@ -278,13 +278,13 @@ export default function ProjectCaseStudy({ project }) {
               href={nextProject.href}
               target="_blank"
               rel="noopener noreferrer"
-              className={`group grid items-center gap-8 border-t border-white/15 pt-9 sm:grid-cols-2 ${focus}`}
+              className={`group block border-t border-white/15 pt-9 text-center ${focus}`}
             >
               <div>
                 <span className="text-xs uppercase tracking-[0.2em] text-[var(--case-muted)]">
                   Próximo projeto
                 </span>
-                <div className="mt-4 flex items-center gap-5">
+                <div className="mt-4 flex items-center justify-center gap-5">
                   <h2 className="text-balance text-3xl font-medium tracking-tight sm:text-5xl">
                     {nextProject.name || nextProject.title}
                   </h2>
@@ -294,12 +294,6 @@ export default function ProjectCaseStudy({ project }) {
                   {[nextProject.description, nextProject.category].filter(Boolean).join(" · ")}
                 </p>
               </div>
-              <img
-                src={nextProject.image}
-                alt={`Prévia de ${nextProject.name || nextProject.title}`}
-                loading="lazy"
-                className="aspect-[2.8/1] w-full rounded-sm object-cover object-top transition-opacity group-hover:opacity-80"
-              />
             </a>
           </Reveal>
         </div>

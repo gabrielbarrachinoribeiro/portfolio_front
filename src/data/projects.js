@@ -3,7 +3,7 @@ import nivoobankImage from "../assets/nivoobank.png";
 import contelarImage from "../assets/contelar.png";
 import folhetoImage from "../assets/folheto.png";
 import imovelleveImage from "../assets/imovelleve.png";
-import projectImage from "../assets/projeto1.jpg";
+import atlasImage from "../assets/atlas.png";
 
 export const projects = [
   {
@@ -60,8 +60,12 @@ export const projects = [
   {
     id: "06",
     title: "Projeto 06",
+    category: "Marketing",
     description: "Landing page de academia",
-    image: projectImage,
+    image: atlasImage,
     href: "/projetos/projeto-06",
+    name: "Atlas Fitness",
+    liveUrl: "https://atlasfitness-rho.vercel.app/",
+    githubUrl: "https://github.com/gabrielbarrachinoribeiro/atlasfitness",
   },
 ];

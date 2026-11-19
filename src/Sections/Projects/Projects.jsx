@@ -46,7 +46,7 @@ export default function Projects() {
               aria-labelledby={`project-${project.id}`}
             >
               <img
-                className={`absolute inset-x-0 w-full object-cover object-top transition-transform duration-500 motion-safe:group-hover:scale-105 motion-reduce:transition-none ${project.id === "05" ? "-top-6 h-[calc(100%+1.5rem)]" : "top-0 h-full"}`}
+                className={`absolute inset-x-0 w-full object-cover transition-transform duration-500 motion-safe:group-hover:scale-105 motion-reduce:transition-none ${project.id === "06" ? "object-center" : "object-top"} ${project.id === "05" ? "-top-6 h-[calc(100%+1.5rem)]" : "top-0 h-full"}`}
                 src={project.image}
                 alt=""
                 loading="lazy"

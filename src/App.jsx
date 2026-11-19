@@ -11,6 +11,7 @@ import ProjectDetails from './pages/ProjectDetails.jsx'
 import ContelarCaseStudy from './pages/ContelarCaseStudy.jsx'
 import ProjectCaseStudy from './pages/ProjectCaseStudy.jsx'
 import { aura } from './data/aura'
+import { atlasfitness } from './data/atlasfitness'
 import { folheto } from './data/folheto'
 import { nivoobank } from './data/nivoobank'
 import { imovelleve } from './data/imovelleve'
@@ -27,6 +28,7 @@ function App() {
     if (project?.id === '05') return <ProjectCaseStudy project={folheto} />
     if (project?.id === '02') return <ContelarCaseStudy />
     if (project?.id === '03') return <ProjectCaseStudy project={{ ...project, ...aura }} />
+    if (project?.id === '06') return <ProjectCaseStudy project={{ ...project, ...atlasfitness }} />
     return <ProjectDetails project={project} />
   }
 
