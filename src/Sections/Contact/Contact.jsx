@@ -21,14 +21,14 @@ export default function Contact() {
                         className="pointer-events-none absolute top-4 right-[-28%] -z-10 h-95 w-full object-contain opacity-60 sm:opacity-100 sm:right-[-3%] sm:h-130 sm:w-[78%] lg:-top-6 lg:h-175"
                     />
 
-                    <h2 id="contact-title" className="m-0 w-fit font-[Arimo,sans-serif] text-[clamp(32px,8.5vw,120px)] leading-[1.03] tracking-tight text-[#F0E9FA]">
+                    <h2 id="contact-title" data-aos="fade-up" className="m-0 w-fit font-[Arimo,sans-serif] text-[clamp(32px,8.5vw,120px)] leading-[1.03] tracking-tight text-[#F0E9FA]">
                         <span className="block font-bold italic">Entre em</span>
                         <span className="ml-[2vw] block font-[Aclonica,sans-serif] text-[0.93em] leading-[1.15] font-normal text-[#A999ED]">Contato</span>
                         <span className="block font-normal italic">e vamos criar</span>
                         <span className="ml-[5vw] block font-bold italic">algo incrível.</span>
                     </h2>
 
-                    <div className="mt-10 max-w-110 md:mt-14">
+                    <div data-aos="fade-up" data-aos-delay="150" className="mt-10 max-w-110 md:mt-14">
                         <p className="m-0 font-[Montserrat,sans-serif] text-base leading-tight text-[#9699AD]">
                             Seja um projeto, uma ideia ou apenas uma conversa sobre possibilidades, estou sempre aberto a novas oportunidades e colaborações.
                         </p>

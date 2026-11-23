@@ -20,7 +20,7 @@ export default function Projects() {
       aria-labelledby="projects-title"
     >
       <div className="container mx-auto px-6">
-        <header className="mb-8 flex flex-col gap-4 lg:mb-10 lg:flex-row lg:items-end lg:justify-between lg:gap-8">
+        <header data-aos="fade-up" className="mb-8 flex flex-col gap-4 lg:mb-10 lg:flex-row lg:items-end lg:justify-between lg:gap-8">
           <h2
             id="projects-title"
             className="m-0 text-[28px] leading-tight font-semibold text-[#F0E9FA] sm:text-4xl"
@@ -36,9 +36,11 @@ export default function Projects() {
           id="projects-gallery"
           className="grid grid-cols-1 gap-4 sm:grid-cols-2 lg:grid-cols-12 lg:grid-rows-[repeat(6,clamp(64px,6vw,96px))]"
         >
-          {projects.map((project) => (
+          {projects.map((project, index) => (
             <a
               key={project.id}
+              data-aos="fade-up"
+              data-aos-delay={(index % 3) * 100}
               href={project.href}
               target="_blank"
               rel="noopener noreferrer"

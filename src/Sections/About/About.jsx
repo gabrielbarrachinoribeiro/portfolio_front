@@ -12,12 +12,13 @@ export default function About() {
         <section id="sobre-mim" className="section-spacing bg-[#101426] font-[Montserrat,sans-serif]" aria-labelledby="about-title">
             <div className="container mx-auto grid grid-cols-1 items-center gap-[clamp(32px,5.7vw,80px)] px-6 lg:grid-cols-[minmax(0,0.7fr)_minmax(0,1fr)]">
                 <img
+                    data-aos="fade-right"
                     className="block aspect-339/416 w-full rounded-[14px] object-cover object-center max-lg:mx-auto max-lg:max-h-120 max-lg:max-w-120"
                     src={aboutImage}
                     alt="Gabriel Barrachino"
                     loading="lazy"
                 />
-                <div className="min-w-0">
+                <div data-aos="fade-up" data-aos-delay="150" className="min-w-0">
                     <h2 id="about-title" className="m-0 mb-4.5 text-[28px] sm:text-4xl leading-tight font-semibold text-[#F0E9FA]">
                         Interfaces são a parte do produto que todo mundo <span className="text-[#A999ED]">toca.</span>
                     </h2>

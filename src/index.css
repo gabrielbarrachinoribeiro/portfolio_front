@@ -9,3 +9,15 @@
     to { transform: translate3d(-50%, 0, 0); }
   }
 }
+
+@media (prefers-reduced-motion: reduce) {
+  [data-aos][data-aos] {
+    transform: translateY(24px);
+    transition-property: opacity, transform !important;
+    transition-duration: 400ms !important;
+  }
+
+  [data-aos][data-aos].aos-animate {
+    transform: translateY(0);
+  }
+}
