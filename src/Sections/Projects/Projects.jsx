@@ -47,12 +47,17 @@ export default function Projects() {
               className={`sm:max-lg:nth-[3n+1]:min-h-90 lg:h-full lg:min-h-0 ${mosaicPlacement[project.id]} min-w-0 min-h-65 group relative isolate block overflow-hidden rounded-[14px] bg-[#14192C] text-[#F0E9FA] no-underline focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-[#A999ED]`}
               aria-labelledby={`project-${project.id}`}
             >
-              <img
-                className={`absolute inset-x-0 w-full object-cover transition-transform duration-500 motion-safe:group-hover:scale-105 motion-reduce:transition-none ${project.id === "06" ? "object-center" : "object-top"} ${project.id === "05" ? "-top-6 h-[calc(100%+1.5rem)]" : "top-0 h-full"}`}
-                src={project.image}
-                alt=""
-                loading="lazy"
-              />
+              <picture>
+                {project.mobileImage && (
+                  <source media="(width < 40rem)" srcSet={project.mobileImage} />
+                )}
+                <img
+                  className={`absolute inset-x-0 w-full object-cover transition-transform duration-500 motion-safe:group-hover:scale-105 motion-reduce:transition-none ${project.id === "06" ? "object-center" : "object-top"} ${project.id === "05" ? "-top-6 h-[calc(100%+1.5rem)]" : "top-0 h-full"}`}
+                  src={project.image}
+                  alt=""
+                  loading="lazy"
+                />
+              </picture>
               <div className="pointer-events-none absolute inset-0 bg-linear-to-t from-[#050710]/95 via-[#050710]/10 to-transparent" />
               <div
                 className="pointer-events-none absolute inset-0 rounded-[inherit] border border-[#F0E9FA]/15"
