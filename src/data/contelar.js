@@ -45,7 +45,7 @@ export const contelar = {
     {
       id: "interface",
       src: contelarInterface,
-      alt: "Interface do Contelar com detalhes da organiza??o financeira",
+      alt: "Interface do Contelar com detalhes da organização financeira",
     },
   ],
   implementation:

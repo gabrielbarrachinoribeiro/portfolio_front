@@ -57,7 +57,7 @@ export default function ProjectCaseStudy({ project }) {
             Voltar aos projetos
           </a>
           <span className="font-mono text-xs uppercase tracking-[0.2em] text-[var(--case-muted)]">
-            Portfolio / Case {project.id}
+            Portfólio / Projeto {project.id}
           </span>
         </nav>
 
@@ -166,7 +166,7 @@ export default function ProjectCaseStudy({ project }) {
               <div className="mt-9 grid gap-8 border-b border-white/10 pb-9 md:grid-cols-2 md:gap-16">
                 <div style={{ fontFamily: project.typography.specimenFamily }}>
                   <p className="text-pretty text-xs uppercase tracking-widest text-[var(--case-muted)]">
-                    Tipografia / {project.typography.name}
+                    Tipografia
                   </p>
                   <div className="mt-4 flex items-baseline gap-6">
                     <span className="text-7xl font-medium tracking-tighter sm:text-8xl">
@@ -193,7 +193,7 @@ export default function ProjectCaseStudy({ project }) {
                     {project.typography.description}
                   </p>
                   <a href="/contato" className={`mt-5 inline-flex w-fit items-center gap-2 text-xs text-[var(--case-accent)] hover:underline ${focus}`}>
-                    Seu próximo passo começa aqui
+                    Converse comigo sobre seu projeto
                     <ArrowUpRight size={14} />
                   </a>
                 </div>
@@ -223,16 +223,6 @@ export default function ProjectCaseStudy({ project }) {
               <SectionHeading title="Por trás da" highlight="interface." />
               <div className="grid gap-10 lg:grid-cols-2 lg:gap-20">
                 <div>
-                  <div className="mb-6 flex flex-wrap gap-2">
-                    {project.technologies.map((tech) => (
-                      <span
-                        key={tech}
-                        className="rounded-full bg-[var(--case-accent)]/[0.07] px-3 py-1.5 text-xs text-[var(--case-accent)]"
-                      >
-                        {tech}
-                      </span>
-                    ))}
-                  </div>
                   <p className="text-pretty max-w-xl text-sm leading-7 text-[var(--case-muted)]">
                     {project.implementation}
                   </p>

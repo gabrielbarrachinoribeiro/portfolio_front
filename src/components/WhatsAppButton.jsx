@@ -3,6 +3,8 @@ import { FaWhatsapp } from 'react-icons/fa'
 import { contact } from '../data/contact'
 
 export default function WhatsAppButton() {
+  if (window.location.pathname.replace(/\/+$/, '') === '/contato') return null
+
   return (
     <a
       href={contact.whatsapp}

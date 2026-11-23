@@ -1,33 +1,33 @@
-const tags = ['Sites institucionais', 'Plataformas digitais', 'Dashboards', 'E-commerce', 'Apps']
-
 const experiences = [
     {
         year: '2024',
-        period: '2024 - ATUAL',
-        title: 'Becoders',
-        role: 'Sócio / Desenvolvedor Front-end',
+        period: '2024 - 2026',
+        title: 'BeCoders',
+        role: 'Sócio e desenvolvedor front-end',
         description: 'Desenvolvimento de interfaces, aplicações web, sites, plataformas digitais e soluções personalizadas.',
+        tags: ['Sites institucionais', 'Plataformas digitais', 'Dashboards', 'E-commerce', 'Aplicativos'],
     },
     {
         year: '2023',
         period: '2023 - 2024',
         title: 'Imóvel Guide',
-        role: 'Estagiário Front-end',
+        role: 'Estagiário de front-end',
         description: 'Desenvolvimento e manutenção de interfaces, implementação de layouts e funcionalidades web.',
+        tags: ['Interfaces web', 'Implementação de layouts'],
     },
     {
         year: '2021',
         period: '2021 - 2025',
         title: 'Engenharia de Software',
         role: 'Faculdade Estácio',
-        description: 'Desenvolvimento e manutenção de interfaces, implementação de layouts e funcionalidades web.',
+        description: 'Formação voltada ao planejamento, desenvolvimento e manutenção de software.',
     },
     {
         year: '2019',
         period: '2019 - 2021',
-        title: 'ADS',
+        title: 'Análise e Desenvolvimento de Sistemas',
         role: 'Faculdade Anhanguera',
-        description: 'Desenvolvimento e manutenção de interfaces, implementação de layouts e funcionalidades web.',
+        description: 'Formação com foco em lógica de programação e desenvolvimento de sistemas.',
     },
 ]
 
@@ -49,11 +49,13 @@ export default function Experience() {
                                 <p className="m-0 text-sm text-[#A999ED]">{experience.role}</p>
                                 <p className="m-0 mt-3 text-base leading-tight text-[#9699AD]">{experience.description}</p>
                             </div>
-                            <ul aria-label={`Áreas de atuação — ${experience.title}`} className="m-0 flex list-none flex-wrap gap-2 p-0 md:col-start-2 xl:col-start-auto">
-                                {tags.map((tag) => (
-                                    <li key={tag} className="rounded-md border border-[#9699AD]/80 px-2 py-1 text-sm leading-tight text-[#9699AD]">{tag}</li>
-                                ))}
-                            </ul>
+                            {experience.tags && (
+                                <ul aria-label={`Áreas de atuação — ${experience.title}`} className="m-0 flex list-none flex-wrap gap-2 p-0 md:col-start-2 xl:col-start-auto">
+                                    {experience.tags.map((tag) => (
+                                        <li key={tag} className="rounded-md border border-[#9699AD]/80 px-2 py-1 text-sm leading-tight text-[#9699AD]">{tag}</li>
+                                    ))}
+                                </ul>
+                            )}
                         </li>
                     ))}
                 </ol>

@@ -32,7 +32,7 @@ export default function ContactPage() {
           <span className="text-[#A999ED]">algo juntos?</span>
         </h1>
         <p className="mt-7 max-w-lg text-pretty text-base leading-relaxed text-[#9699AD] sm:text-lg">
-          Tem um projeto em mente, uma oportunidade ou uma ideia para trocar? Escolha o melhor caminho e vamos conversar.
+          Tem um projeto em mente ou quer conversar sobre uma oportunidade? Escolha um dos canais abaixo.
         </p>
         </div>
 
